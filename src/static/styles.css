@@ -35,6 +35,31 @@ main {
   justify-content: center;
 }
 
+#activities-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#activities-toolbar label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+#activities-toolbar select,
+#activities-toolbar input[type="text"] {
+  padding: 5px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#activities-toolbar input[type="text"] {
+  min-width: 180px;
+}
+
 @media (min-width: 768px) {
   main {
     grid-template-columns: 2fr 1fr;
